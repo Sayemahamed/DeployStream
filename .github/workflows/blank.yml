@@ -24,4 +24,4 @@ jobs:
       run: |
         sshpass -p "$SSH_PASSWORD" rsync -rv \
           -e "ssh -o StrictHostKeyChecking=no" \
-          ./ "$SSH_USERNAME@$SSH_IPADDRESS:/home/$SSH_USERNAME/test" --exclude .git
+          ./ "$SSH_USERNAME@$SSH_IPADDRESS:/home/$SSH_USERNAME/test" --exclude .git 
